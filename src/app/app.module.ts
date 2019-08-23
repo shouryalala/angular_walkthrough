@@ -7,7 +7,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { MatProgressSpinnerModule } from '@angular/material';
+import { MatProgressSpinnerModule, MatSliderModule  } from '@angular/material';
 //dialog, forms
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -67,6 +67,7 @@ import { LoginComponent } from './login/login.component';
     MatDialogModule,
     MatSelectModule,
     MatProgressSpinnerModule,
+    MatSliderModule, 
     MatSlideToggleModule,
     AppRoutingModule,
     ReactiveFormsModule,
