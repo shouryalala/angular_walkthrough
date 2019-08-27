@@ -11,6 +11,7 @@ export class MenuComponent implements OnInit {
 
   //dishes:Dish[] = DISHES;
   dishes:Dish[];
+  errMess: string;
   //selectedDish: Dish;
   
   constructor(private dishService: DishService,
@@ -19,6 +20,8 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.dishService.getDishes().subscribe(dishes => {
       this.dishes = dishes;
+    }, errmeses => {
+        this.errMess = <any>errmeses;
     });    
   }
 
